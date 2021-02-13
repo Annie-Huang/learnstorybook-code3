@@ -5,6 +5,8 @@ https://github.com/Annie-Huang/learnstorybook-code3
 
 https://storybook.js.org/
 https://www.learnstorybook.com/
+https://storybook.js.org/docs/react/writing-stories/decorators
+https://storybook.js.org/docs/react/writing-stories/args#args-composition
 
 ##############################################################################
 
@@ -36,4 +38,7 @@ https://www.learnstorybook.com/intro-to-storybook/react/en/simple-component/
 - Understand what is "Actions help you verify interactions when building UI components in isolation. Oftentimes you won't have access to the functions and state you have in context of the app. Use action() to stub them in."
 - Read parameters page in "parameters are typically used to control the behavior of Storybook's features and addons. In our case we're going to use them to configure how the actions (mocked callbacks) are handled."
 
-
+Section3:
+https://www.learnstorybook.com/intro-to-storybook/react/en/composite-component/
+- Need to understand Decorators " Decorators are a way to provide arbitrary wrappers to stories. In this case we’re using a decorator `key` on the default export to add some `padding` around the rendered component. They can also be used to wrap stories in “providers” –i.e. library components that set React context."
+- Read compose info "By importing TaskStories, we were able to compose the arguments (args for short) in our stories with minimal effort. "
