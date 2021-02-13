@@ -1,0 +1,10 @@
+https://www.learnstorybook.com/intro-to-storybook/
+https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/
+
+https://github.com/Annie-Huang/learnstorybook-code3
+
+https://storybook.js.org/
+https://www.learnstorybook.com/
+##############################################################################
+
+C:\react>npx degit chromaui/intro-storybook-react-template learnstorybook-code3
