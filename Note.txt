@@ -16,6 +16,10 @@ C:\react\learnstorybook-code3>npm run storybook         << http://localhost:6006
 C:\react\learnstorybook-code3>npm run start             << http://localhost:3000    < Show create-react-app page.
 
 
+Override eslintConfig in package.json to get rid of no-anonymous-default-export specified in .eslintcache
+
+
+
 TODO List:
 ===============
 - Find out how to create storybook in SCSS
