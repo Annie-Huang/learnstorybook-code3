@@ -12,7 +12,14 @@ const Template = (args) => <Header {...args} />;
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
   user: {},
+  onLogin: ()=>{},
+  onLogout: ()=>{},
+  onCreateAccount: ()=>{},
 };
 
 export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+LoggedOut.args = {
+  onLogin: ()=>{},
+  onLogout: ()=>{},
+  onCreateAccount: ()=>{},
+};
