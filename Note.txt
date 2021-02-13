@@ -20,9 +20,12 @@ TODO List:
 ===============
 - Find out how to create storybook in SCSS
 - Find out how to use storybook in styled-component.
+- Find out how to change storybook into using typescript.
 
 Section2:
 https://www.learnstorybook.com/intro-to-storybook/react/en/simple-component/
 - Need to read "argTypes -- specify the args behavior in each story." page
 - Understand what is "Actions help you verify interactions when building UI components in isolation. Oftentimes you won't have access to the functions and state you have in context of the app. Use action() to stub them in."
+- Read parameters page in "parameters are typically used to control the behavior of Storybook's features and addons. In our case we're going to use them to configure how the actions (mocked callbacks) are handled."
+
 
