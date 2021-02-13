@@ -5,8 +5,20 @@ https://github.com/Annie-Huang/learnstorybook-code3
 
 https://storybook.js.org/
 https://www.learnstorybook.com/
+
 ##############################################################################
 
 C:\react>npx degit chromaui/intro-storybook-react-template learnstorybook-code3
 C:\react\learnstorybook-code3>npm install
+
+C:\react\learnstorybook-code3>npm run test --watchAll
+C:\react\learnstorybook-code3>npm run storybook         << http://localhost:6006/
+C:\react\learnstorybook-code3>npm run start             << http://localhost:3000    < Show create-react-app page.
+
+
+TODO List:
+===============
+- Find out how to create storybook in SCSS
+- Find out how to use storybook in styled-component.
+
 
