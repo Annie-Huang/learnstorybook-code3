@@ -1,4 +1,4 @@
 https://github.com/facebook/create-react-app/issues/9914
 https://github.com/storybookjs/storybook/issues/12914
-
+https://www.carlrippon.com/Different-ways-to-strongly-type-function-component-props-with-typescript/
 
