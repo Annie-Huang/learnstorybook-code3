@@ -96,6 +96,7 @@ const argTypes = {
 https://storybook.js.org/docs/react/writing-stories/decorators
 A decorator is a way to wrap a story in extra “rendering” functionality.
 
+Part 1: Wrap stories with extra markup:
 story decorator:
     export const Primary = …
     Primary.decorators = [(Story) => <div style={{ margin: '3em' }}><Story/></div>]
@@ -122,6 +123,7 @@ Global decorators, in the order they are defined
 Component decorators, in the order they are defined
 Story decorators, in the order they are defined.
 
+Part 2: “Context” for mocking (see point 5)
 
 4. You can use story's args in the test file:
 ----------------------------------------------
@@ -130,9 +132,40 @@ In C:\react\learnstorybook-code3\src\components\TaskList.test.js:
     ReactDOM.render(<WithPinnedTasks {...WithPinnedTasks.args} />, div);
 
 
+5. Nested container components
+----------------------------------------------
+e.g. The TaskList component is a container that renders the PureTaskList presentational component.
+     And InboxScreen component is simply wrapping the TaskList component.
+Solution: Supplying context with decorators
 
+    import { Provider } from 'react-redux';
+    import { action } from '@storybook/addon-actions';
+    // A super-simple mock of a redux store
+    const store = {
+      getState: () => {
+       return {
+           tasks: TaskListStories.Default.args.tasks,
+         };
+      },
+      subscribe: () => 0,
+      dispatch: action('dispatch'),
+    };
 
-
+    export default {
+      component: PureInboxScreen,
+      decorators: [story => <Provider store={store}>{story()}</Provider>],
+      title: 'InboxScreen',
+    };
+    ----------------
+    Or Need to use styled-component theme:
+    import { ThemeProvider } from 'styled-components';
+    export const decorators = [
+      (Story) => (
+        <ThemeProvider theme="default">
+          <Story />
+        </ThemeProvider>
+      ),
+    ];
 
 
 
