@@ -21,7 +21,7 @@ TODO List:
 - Find out how to use storybook in styled-component.
 - Find out how to change storybook into using typescript.
 
-- Why the Canvas tab of the Task story doesn't have Actions | Controls tabs at the bottom?
+- Why OTC library -> Canvas tab doesn't have Actions | Controls tabs at the bottom?
 
 ##############################################################################
 Up to:
@@ -222,6 +222,7 @@ C:\Temp\otc-ui-component-library\.storybook\manager-head.html
 
 7. storybook command options:
 ----------------------------------------------
+https://storybook.js.org/addons
 https://github.com/storybookjs/storybook/blob/master/ADDONS_SUPPORT.md
 
 
@@ -253,11 +254,14 @@ https://storybook.js.org/addons/@storybook/addon-links
       addons: ['@storybook/addon-links']
     }
 
+storybook-addon-a11y
+This storybook addon can be helpful to make your UI components more accessible.
+https://storybook.js.org/addons/@storybook/addon-a11y
 
-
-
-
-
+    yarn add @storybook/addon-a11y --dev
+    module.exports = {
+      addons: ['@storybook/addon-a11y'],
+    };
 
 
 
