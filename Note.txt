@@ -27,7 +27,7 @@ TODO List:
 Up to:
 https://storybook.js.org/docs/react/get-started/introduction
 https://storybook.js.org/tutorials/
-https://storybook.js.org/tutorials/intro-to-storybook/react/en/data/
+https://storybook.js.org/tutorials/intro-to-storybook/react/en/screen/
 
 -------------------------
 
