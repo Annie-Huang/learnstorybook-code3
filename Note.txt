@@ -1,5 +1,6 @@
 https://www.learnstorybook.com/intro-to-storybook/
 https://www.learnstorybook.com/intro-to-storybook/react/en/data/
+https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/     <<< This tutorial mainly follow this...
 
 https://github.com/Annie-Huang/learnstorybook-code3
 
@@ -8,7 +9,27 @@ https://www.learnstorybook.com/
 https://storybook.js.org/docs/react/writing-stories/decorators
 https://storybook.js.org/docs/react/writing-stories/args#args-composition
 
+https://github.com/styleguidist/react-docgen-typescript
+https://github.com/reactjs/react-docgen
+
+To Read list:
+https://www.componentdriven.org/    The "Component Driven Development", "Atomic Design" "Design System Handbook"
+
+TODO List:
+===============
+- Find out how to create storybook in SCSS
+- Find out how to use storybook in styled-component.
+- Find out how to change storybook into using typescript.
+
+- Why the Canvas tab of the Task story doesn't have Actions | Controls tabs at the bottom?
+
 ##############################################################################
+Up to:
+https://storybook.js.org/docs/react/get-started/introduction
+https://storybook.js.org/tutorials/
+https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/
+
+-------------------------
 
 C:\react>npx degit chromaui/intro-storybook-react-template learnstorybook-code3
 C:\react\learnstorybook-code3>npm install
@@ -21,16 +42,7 @@ C:\react\learnstorybook-code3>npm install @storybook/addon-storyshots react-test
 Override eslintConfig in package.json to get rid of no-anonymous-default-export specified in .eslintcache
 
 
-
-
-
-
-
-TODO List:
-===============
-- Find out how to create storybook in SCSS
-- Find out how to use storybook in styled-component.
-- Find out how to change storybook into using typescript.
+##############################################################################
 
 Section2:
 https://www.learnstorybook.com/intro-to-storybook/react/en/simple-component/
@@ -42,3 +54,127 @@ Section3:
 https://www.learnstorybook.com/intro-to-storybook/react/en/composite-component/
 - Need to understand Decorators " Decorators are a way to provide arbitrary wrappers to stories. In this case we’re using a decorator `key` on the default export to add some `padding` around the rendered component. They can also be used to wrap stories in “providers” –i.e. library components that set React context."
 - Read compose info "By importing TaskStories, we were able to compose the arguments (args for short) in our stories with minimal effort. "
+
+
+##############################################################################
+
+1. default export:
+--------------------
+component       -- the component itself,
+title           -- how to refer to the component in the sidebar of the Storybook app,
+excludeStories  -- exports in the story file that should not be rendered as stories by Storybook.
+argTypes        -- specify the args behavior in each story.
+decorators:     [ ... ],
+parameters:     { ... }
+
+2. Sample of argTypes:
+--------------------------
+const argTypes = {
+  label: {
+    name: 'label',
+    type: { name: 'string', required: false },
+    defaultValue: 'Hello',
+    description: 'overwritten description',
+    table: {
+      type: {
+          summary: 'something short',
+          detail: 'something really really long'
+      },
+      defaultValue: { summary: 'Hello' },
+    },
+    control: {
+      type: null
+    }
+  }
+}
+
+3. Decorators
+-----------------------
+https://storybook.js.org/docs/react/writing-stories/decorators
+A decorator is a way to wrap a story in extra “rendering” functionality.
+
+story decorator:
+    export const Primary = …
+    Primary.decorators = [(Story) => <div style={{ margin: '3em' }}><Story/></div>]
+
+Component decorator:
+    export default {
+      component: TaskList,
+      title: 'TaskList',
+      decorators: [story => <div style={{ padding: '3rem' }}>{story()}</div>],
+    };
+
+Global decorator:
+    We can also set a decorator for all stories via the decorators export of your .storybook/preview.js file:
+    export const decorators = [
+      (Story) => (
+        <div style={{ margin: '3em' }}>
+          <Story />
+        </div>
+      ),
+    ];
+
+All decorators, defined at all levels that apply to a story will run whenever that story is rendered, in the order:
+Global decorators, in the order they are defined
+Component decorators, in the order they are defined
+Story decorators, in the order they are defined.
+
+
+4. You can use story's args in the test file:
+----------------------------------------------
+In C:\react\learnstorybook-code3\src\components\TaskList.test.js:
+    import { WithPinnedTasks } from './TaskList.stories'; //👈  Our story imported here
+    ReactDOM.render(<WithPinnedTasks {...WithPinnedTasks.args} />, div);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
