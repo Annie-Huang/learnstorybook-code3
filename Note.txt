@@ -27,7 +27,7 @@ TODO List:
 Up to:
 https://storybook.js.org/docs/react/get-started/introduction
 https://storybook.js.org/tutorials/
-https://storybook.js.org/tutorials/intro-to-storybook/react/en/screen/
+https://storybook.js.org/tutorials/intro-to-storybook/react/en/deploy/
 
 -------------------------
 
@@ -168,26 +168,54 @@ Solution: Supplying context with decorators
     ];
 
 
+5. storybook command options:
+----------------------------------------------
+https://storybook.js.org/docs/react/api/cli-options
+
+CurrentProject:
+    "build-storybook": "build-storybook -s public"
+OTC:
+    "build-storybook": "node storybook-versioning.js && build-storybook -c .storybook -o .storybook-build -s ./src/assets",
+    build-storybook:
+    -c .storybook -o .storybook-build -s ./src/assets",
+
+-c, --config-dir [dir-name]
+    Directory where to load Storybook configurations from
+    build-storybook -c .storybook
+
+-o, --output-dir [dir-name]
+    Directory where to store built files
+    build-storybook -o /my-deployed-storybook
+
+-s, --static-dir <dir-names>
+    Directory where to load static files from, comma-separated list
+    build-storybook -s public
 
 
+CurrentProject:
+    "storybook": "start-storybook -p 6006 -s public",
+OTC:
+    "storybook": "start-storybook -s ./src/assets -p 6006 --quiet",
+    start-storybook
+    -s ./src/assets -p 6006 --quiet
 
+-s, --static-dir <dir-names>
+    Directory where to load static files from, comma-separated list
+    start-storybook -s public
 
+-p, --port [number]
+    Port to run Storybook
+    start-storybook -p 9009
 
+--quiet
+    Suppress verbose build output
+    start-storybook --quiet
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+In OTC, version also list in:
+C:\Temp\otc-ui-component-library\src\introduction.stories.mdx
+C:\Temp\otc-ui-component-library\storybook-versioning.js
+C:\Temp\otc-ui-component-library\.storybook\manager-head_template.html
+C:\Temp\otc-ui-component-library\.storybook\manager-head.html
 
 
 
