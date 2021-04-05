@@ -1,17 +1,20 @@
 import React from 'react';
 
-import TaskList from './TaskList';
+// import TaskList from './TaskList';
+import { PureTaskList } from './TaskList';
 import * as TaskStories from './Task.stories';
 
 // https://storybook.js.org/docs/react/writing-stories/decorators
 // The following is Component decorators. But you can also do Story decorators | Global decorators (in preview.js)
 export default {
-  component: TaskList,
+  // component: TaskList,
+  component: PureTaskList,
   title: 'TaskList',
   decorators: [story => <div style={{ padding: '3rem' }}>{story()}</div>],
 };
 
-const Template = args => <TaskList {...args} />;
+// const Template = args => <TaskList {...args} />;
+const Template = args => <PureTaskList {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
