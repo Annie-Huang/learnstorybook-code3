@@ -27,7 +27,7 @@ TODO List:
 Up to:
 https://storybook.js.org/docs/react/get-started/introduction
 https://storybook.js.org/tutorials/
-https://storybook.js.org/tutorials/intro-to-storybook/react/en/deploy/
+https://storybook.js.org/tutorials/intro-to-storybook/react/en/using-addons/
 
 -------------------------
 
@@ -40,6 +40,7 @@ C:\react\learnstorybook-code3>npm run start             << http://localhost:3000
 C:\react\learnstorybook-code3>npm install @storybook/addon-storyshots react-test-renderer --save-dev
 C:\react\learnstorybook-code3>npm install react-redux redux
 C:\react\learnstorybook-code3>npm install prop-types --save-dev
+C:\react\learnstorybook-code3>npm install @storybook/addon-a11y --save-dev
 
 
 Override eslintConfig in package.json to get rid of no-anonymous-default-export specified in .eslintcache
@@ -168,7 +169,7 @@ Solution: Supplying context with decorators
     ];
 
 
-5. storybook command options:
+6. storybook command options:
 ----------------------------------------------
 https://storybook.js.org/docs/react/api/cli-options
 
@@ -219,16 +220,38 @@ C:\Temp\otc-ui-component-library\.storybook\manager-head.html
 
 
 
+7. storybook command options:
+----------------------------------------------
+https://github.com/storybookjs/storybook/blob/master/ADDONS_SUPPORT.md
 
 
+Add Figma design:
+https://storybook.js.org/addons/storybook-addon-designs
 
+    npm install --save-dev storybook-addon-designs@alpha
 
+    // .storybook/main.js
+    module.exports = {
+      addons: ['storybook-addon-designs'],
+    }
 
+    In xx.stories.tsx
+    parameters: {
+      notes,
+      design: {
+        type: "figma",
+        url: "https://www.figma.com/file/IKgyiORITF0gKid1JDmXqU/%5BNEW%5D-POST%2B-Sticker-sheet?node-id=2925%3A41939",
+      },
+    },
 
+Story Links Addon
+The Storybook Links addon can be used to create links that navigate between stories in Storybook.
+https://storybook.js.org/addons/@storybook/addon-links
 
-
-
-
+    yarn add -D @storybook/addon-links
+    module.exports = {
+      addons: ['@storybook/addon-links']
+    }
 
 
 
