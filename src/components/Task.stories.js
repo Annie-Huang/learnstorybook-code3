@@ -5,6 +5,13 @@ import Task from './Task';
 export default {
   component: Task,
   title: 'Task',
+  parameters: {
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample',
+    },
+  }
 };
 
 const Template = args => <Task {...args} />;

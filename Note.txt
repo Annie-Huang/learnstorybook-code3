@@ -221,13 +221,13 @@ C:\Temp\otc-ui-component-library\.storybook\manager-head.html
 
 
 
-7. storybook command options:
+7. Addons
 ----------------------------------------------
 https://storybook.js.org/addons
 https://github.com/storybookjs/storybook/blob/master/ADDONS_SUPPORT.md
 
 
-8. Addons -- Add Figma design
+7.1. Addons -- Add Figma design
 ----------------------------------------------
 https://storybook.js.org/addons/storybook-addon-designs
 
@@ -247,7 +247,7 @@ https://storybook.js.org/addons/storybook-addon-designs
       },
     },
 
-8. Addons -- Story Links Addon
+7.2. Addons -- Story Links Addon
 ----------------------------------------------
 The Storybook Links addon can be used to create links that navigate between stories in Storybook.
 https://storybook.js.org/addons/@storybook/addon-links
@@ -257,7 +257,7 @@ https://storybook.js.org/addons/@storybook/addon-links
       addons: ['@storybook/addon-links']
     }
 
-8. Addons -- storybook-addon-a11y
+7.3. Addons -- storybook-addon-a11y
 ----------------------------------------------
 This storybook addon can be helpful to make your UI components more accessible.
 https://storybook.js.org/addons/@storybook/addon-a11y
@@ -268,9 +268,43 @@ https://storybook.js.org/addons/@storybook/addon-a11y
     };
 
 
+7.4. Addons -- storybook-addon-designs
+----------------------------------------------
+https://storybook.js.org/addons/storybook-addon-designs/
+https://pocka.github.io/storybook-addon-designs/?path=/docs/docs-quick-start--page
+https://pocka.github.io/storybook-addon-designs/?path=/docs/docs-figma-readme--page
+https://pocka.github.io/storybook-addon-designs/?path=/docs/docs-link-examples--set-label
+https://pocka.github.io/storybook-addon-designs/?path=/docs/docs-advanced-usage--embed-multiple-designs
 
+    yarn add -D storybook-addon-designs
+    // .storybook/main.js
+    module.exports = {
+      addons: ['storybook-addon-designs'],
+    }
 
-
-
-
-
+    YOu can do like this:
+      design: {
+        type: 'figma',
+        url:
+          'https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample',
+      },
+      design: {
+        type: 'link',
+        url:
+          'https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample',
+        label: 'Open design in new tab',
+      },
+      design: [
+        {
+          name: 'Foo',
+          type: 'figma',
+          url:
+            'https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample',
+        },
+        {
+          name: 'Bar',
+          type: 'link',
+          url:
+            'https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample',
+        },
+      ],

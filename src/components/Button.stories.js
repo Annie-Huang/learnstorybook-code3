@@ -13,8 +13,14 @@ export default {
       options: {},
       // optional flag to prevent the automatic check
       manual: true,
-    },
+      design: {
+        type: 'figma',
+        url:
+          'https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample',
+      },
+    }
   },
+
 };
 
 export const accessible = () => <button>Accessible button</button>;
