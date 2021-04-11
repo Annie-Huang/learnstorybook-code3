@@ -42,7 +42,7 @@ C:\react\learnstorybook-code3>npm install react-redux redux
 C:\react\learnstorybook-code3>npm install prop-types --save-dev
 C:\react\learnstorybook-code3>npm install @storybook/addon-a11y --save-dev
 C:\react\learnstorybook-code3>npm install storybook-addon-designs --save-dev --force
-
+C:\react\learnstorybook-code3>npx sb upgrade
 
 Override eslintConfig in package.json to get rid of no-anonymous-default-export specified in .eslintcache
 
