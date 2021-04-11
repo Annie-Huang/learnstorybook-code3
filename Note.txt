@@ -41,6 +41,7 @@ C:\react\learnstorybook-code3>npm install @storybook/addon-storyshots react-test
 C:\react\learnstorybook-code3>npm install react-redux redux
 C:\react\learnstorybook-code3>npm install prop-types --save-dev
 C:\react\learnstorybook-code3>npm install @storybook/addon-a11y --save-dev
+C:\react\learnstorybook-code3>npm install storybook-addon-designs --save-dev --force
 
 
 Override eslintConfig in package.json to get rid of no-anonymous-default-export specified in .eslintcache
@@ -226,7 +227,8 @@ https://storybook.js.org/addons
 https://github.com/storybookjs/storybook/blob/master/ADDONS_SUPPORT.md
 
 
-Add Figma design:
+8. Addons -- Add Figma design
+----------------------------------------------
 https://storybook.js.org/addons/storybook-addon-designs
 
     npm install --save-dev storybook-addon-designs@alpha
@@ -245,7 +247,8 @@ https://storybook.js.org/addons/storybook-addon-designs
       },
     },
 
-Story Links Addon
+8. Addons -- Story Links Addon
+----------------------------------------------
 The Storybook Links addon can be used to create links that navigate between stories in Storybook.
 https://storybook.js.org/addons/@storybook/addon-links
 
@@ -254,7 +257,8 @@ https://storybook.js.org/addons/@storybook/addon-links
       addons: ['@storybook/addon-links']
     }
 
-storybook-addon-a11y
+8. Addons -- storybook-addon-a11y
+----------------------------------------------
 This storybook addon can be helpful to make your UI components more accessible.
 https://storybook.js.org/addons/@storybook/addon-a11y
 
@@ -262,6 +266,7 @@ https://storybook.js.org/addons/@storybook/addon-a11y
     module.exports = {
       addons: ['@storybook/addon-a11y'],
     };
+
 
 
 
