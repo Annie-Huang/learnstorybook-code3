@@ -43,6 +43,11 @@ C:\react\learnstorybook-code3>npm install prop-types --save-dev
 C:\react\learnstorybook-code3>npm install @storybook/addon-a11y --save-dev
 C:\react\learnstorybook-code3>npm install storybook-addon-designs --save-dev --force
 C:\react\learnstorybook-code3>npx sb upgrade
+    http://localhost:6007/?path=/settings/release-notes
+    🚀 Frameworks: Vue 3, Svelte Native CSF 📦 Packaging: NPM 7, Yarn 2, ESM 🛠 Bundlers: Webpack 5 (experimental),
+    pluggable bundlers to enable Vite, ESBuild, Snowpack, & more.
+
+
 
 Override eslintConfig in package.json to get rid of no-anonymous-default-export specified in .eslintcache
 
