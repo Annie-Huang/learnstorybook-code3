@@ -28,6 +28,8 @@ Up to:
 https://storybook.js.org/docs/react/get-started/introduction
 https://storybook.js.org/tutorials/
 https://storybook.js.org/tutorials/intro-to-storybook/react/en/using-addons/
+    << Add one suddently disappear after i upgrade storybook to 6.2.7
+       Will take a look at other addon later.. (https://storybook.js.org/addons)
 
 -------------------------
 
