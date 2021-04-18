@@ -27,8 +27,7 @@ Up to:
 https://storybook.js.org/docs/react/get-started/introduction
 https://storybook.js.org/tutorials/
 https://storybook.js.org/tutorials/intro-to-storybook/react/en/using-addons/
-    << Add one suddenly disappear after i upgrade storybook to 6.2.8   (while storybook 6.1.5 can see addon https://github.com/chromaui/learnstorybook-code, C:\Users\Annie\Downloads\learnstorybook-code-master)
-       Will take a look at other addon later.. (https://storybook.js.org/addons)
+    !!!! When you don't see addon when running 'npm run storybook', click the ... circle button and choose "Change addons orientation" to bring up addons.
 
 https://storybook.js.org/blog/storybook-6-2/
 
@@ -58,9 +57,9 @@ C:\react\learnstorybook-code3>npx sb upgrade
     🚀 Frameworks: Vue 3, Svelte Native CSF 📦 Packaging: NPM 7, Yarn 2, ESM 🛠 Bundlers: Webpack 5 (experimental),
     pluggable bundlers to enable Vite, ESBuild, Snowpack, & more.
 
-
-
 Override eslintConfig in package.json to get rid of no-anonymous-default-export specified in .eslintcache
+
+C:\react\learnstorybook-code3>npm i @storybook/addon-console --save-dev
 
 
 ##############################################################################
@@ -358,3 +357,11 @@ https://pocka.github.io/storybook-addon-designs/?path=/docs/docs-advanced-usage-
             'https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample',
         },
       ],
+
+7.4. Addons -- @storybook/addon-console
+----------------------------------------------
+
+
+
+
+
