@@ -62,6 +62,10 @@ Override eslintConfig in package.json to get rid of no-anonymous-default-export 
 
 C:\react\learnstorybook-code3>npm i @storybook/addon-console --save-dev
 
+C:\react\learnstorybook-code3>npm run test:coverage
+    "test:coverage": "react-scripts test --watchAll=false --coverage",
+    You cannot do coverage with watch mode, it is very faky.
+    Coverage report is in C:\react\learnstorybook-code3\coverage\lcov-report\index.html
 
 ##############################################################################
 
