@@ -2,6 +2,12 @@ https://www.learnstorybook.com/intro-to-storybook/
 https://www.learnstorybook.com/intro-to-storybook/react/en/data/
 https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/     <<< This tutorial mainly follow this...
 
+Final one will looked like:
+    https://github.com/chromaui/learnstorybook-code
+Deployed version:
+    https://clever-banach-415c03.netlify.app/?path=/story/task--default
+
+
 https://github.com/Annie-Huang/learnstorybook-code3
 
 https://storybook.js.org/
@@ -28,7 +34,7 @@ Up to:
 https://storybook.js.org/docs/react/get-started/introduction
 https://storybook.js.org/tutorials/
 https://storybook.js.org/tutorials/intro-to-storybook/react/en/using-addons/
-    << Add one suddently disappear after i upgrade storybook to 6.2.7
+    << Add one suddenly disappear after i upgrade storybook to 6.2.8   (while storybook 6.1.5 can see addon https://github.com/chromaui/learnstorybook-code, C:\Users\Annie\Downloads\learnstorybook-code-master)
        Will take a look at other addon later.. (https://storybook.js.org/addons)
 
 -------------------------
@@ -99,6 +105,40 @@ const argTypes = {
     }
   }
 }
+
+2.1. Control:
+--------------------------
+https://storybook.js.org/docs/react/essentials/controls
+Under "Here is the full list of available controls you can use:" section
+
+export default {
+  title: 'Button',
+  component: Button,
+  argTypes: {
+    variant: {
+      control: {
+        type: 'radio',
+        options: ['primary', 'secondary']
+      }
+    }
+  }
+};
+
+
+const config = {
+  title: "Form Fields/Button",
+  component: Button,
+  argTypes: {
+    variant: select(Object.values(ButtonVariant)),
+    size: select(Object.values(ButtonSize)),
+    label: string,
+    icon: select([undefined, ...Object.keys(icons)]),
+    keyboardShortcut: select([undefined, "1", "A", "Y", "o"]),
+    ...
+  }...
+}
+export const select = (options: any[]) => ({ control: { type: "select", options } });
+
 
 3. Decorators
 -----------------------
