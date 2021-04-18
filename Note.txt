@@ -30,6 +30,7 @@ https://storybook.js.org/tutorials/intro-to-storybook/react/en/using-addons/
     !!!! When you don't see addon when running 'npm run storybook', click the ... circle button and choose "Change addons orientation" to bring up addons.
 
 https://storybook.js.org/blog/storybook-6-2/
+Testing Library and Storybook  by Jimmy Cleveland: (https://www.youtube.com/watch?v=k6NG96awIJ0)
 
 ##############################################################################
 TODO List:
@@ -372,3 +373,13 @@ https://pocka.github.io/storybook-addon-designs/?path=/docs/docs-advanced-usage-
 
     import initStoryshots from '@storybook/addon-storyshots';
     initStoryshots();
+
+
+8. Storybook Testing
+------------------------
+    screen is the new recommended way in testing library basically to do all of the getBy and queryBy
+
+    test('should render', () => {
+      render(<Button label='Click Me!' />);
+      expect(screen.getByRole('button')).toHaveTextContent(/click/i); // regex anything contains the word 'click'
+    });
