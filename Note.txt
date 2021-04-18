@@ -1,43 +1,46 @@
 https://www.learnstorybook.com/intro-to-storybook/
+https://github.com/Annie-Huang/learnstorybook-code3
+
 https://www.learnstorybook.com/intro-to-storybook/react/en/data/
 https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/     <<< This tutorial mainly follow this...
+https://www.componentdriven.org/    <<< The "Component Driven Development", "Atomic Design" "Design System Handbook"
+https://storybook.js.org/
+https://www.learnstorybook.com/
+https://storybook.js.org/docs/react/writing-stories/decorators
+https://storybook.js.org/docs/react/writing-stories/args#args-composition
+https://github.com/styleguidist/react-docgen-typescript
+https://github.com/reactjs/react-docgen
+
 
 Final one will looked like:
     https://github.com/chromaui/learnstorybook-code
 Deployed version:
     https://clever-banach-415c03.netlify.app/?path=/story/task--default
 
+Storybook example:
+https://5cf841a3f3e3d200208ffc74-tvdjmossfs.chromatic.com/
+https://storybook.js.org/docs/react/get-started/examples
 
-https://github.com/Annie-Huang/learnstorybook-code3
 
-https://storybook.js.org/
-https://www.learnstorybook.com/
-https://storybook.js.org/docs/react/writing-stories/decorators
-https://storybook.js.org/docs/react/writing-stories/args#args-composition
-
-https://github.com/styleguidist/react-docgen-typescript
-https://github.com/reactjs/react-docgen
-
-To Read list:
-https://www.componentdriven.org/    The "Component Driven Development", "Atomic Design" "Design System Handbook"
-
-TODO List:
-===============
-- Find out how to create storybook in SCSS
-- Find out how to use storybook in styled-component.
-- Find out how to change storybook into using typescript.
-
-- Why OTC library -> Canvas tab doesn't have Actions | Controls tabs at the bottom?
-
-##############################################################################
 Up to:
+-------------
 https://storybook.js.org/docs/react/get-started/introduction
 https://storybook.js.org/tutorials/
 https://storybook.js.org/tutorials/intro-to-storybook/react/en/using-addons/
     << Add one suddenly disappear after i upgrade storybook to 6.2.8   (while storybook 6.1.5 can see addon https://github.com/chromaui/learnstorybook-code, C:\Users\Annie\Downloads\learnstorybook-code-master)
        Will take a look at other addon later.. (https://storybook.js.org/addons)
 
--------------------------
+https://storybook.js.org/blog/storybook-6-2/
+
+##############################################################################
+TODO List:
+===============
+- Find out how to create storybook in SCSS
+- Find out how to use storybook in styled-component.
+- Find out how to change storybook into using typescript.
+- Why OTC library -> Canvas tab doesn't have Actions | Controls tabs at the bottom?
+
+
 
 C:\react>npx degit chromaui/intro-storybook-react-template learnstorybook-code3
 C:\react\learnstorybook-code3>npm install
