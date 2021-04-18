@@ -360,8 +360,15 @@ https://pocka.github.io/storybook-addon-designs/?path=/docs/docs-advanced-usage-
 
 7.4. Addons -- @storybook/addon-console
 ----------------------------------------------
+    https://storybookjs.github.io/storybook-addon-console/
+    Cannot get this one working...
 
+7.5. Addons -- @storybook/addon-storyshots
+----------------------------------------------
+    https://www.npmjs.com/package/@storybook/addon-storyshots
+    yarn add @storybook/addon-storyshots --dev
+    C:\react\learnstorybook-code3\src\storybook.test.js
+    Output: C:\react\learnstorybook-code3\src\__snapshots__\storybook.test.js.snap
 
-
-
-
+    import initStoryshots from '@storybook/addon-storyshots';
+    initStoryshots();
